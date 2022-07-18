@@ -2,5 +2,5 @@
 
 public class Introduction: BaseEntity
 {
-    public string Intro { get; set; }
+    public string? Intro { get; set; }
 }

@@ -5,6 +5,7 @@
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
         <RootNamespace>CompareCountries.Core</RootNamespace>
+        <UserSecretsId>e34d83c4-3b3b-4e86-ab26-f21ac09b9288</UserSecretsId>
     </PropertyGroup>
 
     <ItemGroup>

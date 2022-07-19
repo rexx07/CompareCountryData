@@ -10,11 +10,11 @@ namespace CompareCountries.Core.Domain.WorldFactbook.Economy;
 public class RealGdpPPP: MetaData
 {
     [BsonElement("Real GDP (purchasing power parity) 2018")]
-    public RealGdpPPP2018 RealGdpPpp2018 { get; set; }
+    public RealGdpPPP2018? RealGdpPpp2018 { get; set; }
     [BsonElement("Real GDP (purchasing power parity) 2019")]
-    public RealGdpPPP2019 RealGdpPpp2019 { get; set; }
+    public RealGdpPPP2019? RealGdpPpp2019 { get; set; }
     [BsonElement("Real GDP (purchasing power parity) 2020")]
-    public RealGdpPPP2020 RealGdpPpp2020 { get; set; }
+    public RealGdpPPP2020? RealGdpPpp2020 { get; set; }
 }
 
 /// <summary>

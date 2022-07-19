@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel;
+using MongoDB.Bson.Serialization.Attributes;
 
 namespace CompareCountries.Core.Domain.WorldFactbook.Economy;
 
@@ -8,7 +9,10 @@ namespace CompareCountries.Core.Domain.WorldFactbook.Economy;
 [DisplayName("Household income or consumption by percentage share")]
 public class HouseholdIncomeConsumption
 {
-    
+    [BsonElement("Highest 10%")]
+    public Highest? Highest { get; set; }
+    [BsonElement("Lowest 10%")]
+    public  Lowest Lowest { get; set; }
 }
 
 /// <summary>

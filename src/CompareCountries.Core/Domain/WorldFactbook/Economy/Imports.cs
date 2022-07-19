@@ -8,15 +8,15 @@ namespace CompareCountries.Core.Domain.WorldFactbook.Economy;
 public class Imports
 {
     [BsonElement("Imports 2016")]
-    public Imports2016 Imports2016 { get; set; }
+    public Imports2016? Imports2016 { get; set; }
     [BsonElement("Imports 2017")]
-    public Imports2017 Imports2017 { get; set; }
+    public Imports2017? Imports2017 { get; set; }
     [BsonElement("Imports 2018")]
-    public Imports2018 Imports2018 { get; set; }
+    public Imports2018? Imports2018 { get; set; }
     [BsonElement("Imports 2019")]
-    public Imports2019 Imports2019 { get; set; }
+    public Imports2019? Imports2019 { get; set; }
     [BsonElement("Imports 2016")]
-    public Imports2020 Imports2020 { get; set; }
+    public Imports2020? Imports2020 { get; set; }
 }
 
 /// <summary>

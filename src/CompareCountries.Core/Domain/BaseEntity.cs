@@ -5,7 +5,6 @@ using MongoDB.Bson.Serialization.IdGenerators;
 
 namespace CompareCountries.Core.Domain;
 
-[BsonIgnoreExtraElements]
 public class BaseEntity
 {
     [Required]

@@ -8,13 +8,13 @@ namespace CompareCountries.Core.Domain.WorldFactbook.Economy;
 public class DebtExternal
 {
     [BsonElement("Debt - external 2016")]
-    public DebtExternal2016 DebtExternal2016 { get; set; }
+    public DebtExternal2016? DebtExternal2016 { get; set; }
     [BsonElement("Debt - external 2017")]
-    public DebtExternal2017 DebtExternal2017 { get; set; }
+    public DebtExternal2017? DebtExternal2017 { get; set; }
     [BsonElement("Debt - external 2018")]
-    public DebtExternal2018 DebtExternal2018 { get; set; }
+    public DebtExternal2018? DebtExternal2018 { get; set; }
     [BsonElement("Debt - external 2019")]
-    public DebtExternal2019 DebtExternal2019 { get; set; }
+    public DebtExternal2019? DebtExternal2019 { get; set; }
 }
 
 /// <summary>

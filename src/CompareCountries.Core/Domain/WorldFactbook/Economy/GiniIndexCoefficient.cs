@@ -10,23 +10,23 @@ namespace CompareCountries.Core.Domain.WorldFactbook.Economy;
 public class GiniIndexCoefficient
 {
     [BsonElement("Gini index coefficient - distribution of family income 1993")]
-    public GiniIndexCoefficient1993 GiniIndexCoefficient1993 { get; set; }
+    public GiniIndexCoefficient1993? GiniIndexCoefficient1993 { get; set; }
     [BsonElement("Gini index coefficient - distribution of family income 2011")]
-    public GiniIndexCoefficient2011 GiniIndexCoefficient2011 { get; set; }
+    public GiniIndexCoefficient2011? GiniIndexCoefficient2011 { get; set; }
     [BsonElement("Gini index coefficient - distribution of family income 2012")]
-    public GiniIndexCoefficient2012 GiniIndexCoefficient2012 { get; set; }
+    public GiniIndexCoefficient2012? GiniIndexCoefficient2012 { get; set; }
     [BsonElement("Gini index coefficient - distribution of family income 2013")]
-    public GiniIndexCoefficient2013 GiniIndexCoefficient2013 { get; set; }
+    public GiniIndexCoefficient2013? GiniIndexCoefficient2013 { get; set; }
     [BsonElement("Gini index coefficient - distribution of family income 2014")]
-    public GiniIndexCoefficient2014 GiniIndexCoefficient2014 { get; set; }
+    public GiniIndexCoefficient2014? GiniIndexCoefficient2014 { get; set; }
     [BsonElement("Gini index coefficient - distribution of family income 2015")]
-    public GiniIndexCoefficient2015 GiniIndexCoefficient2015 { get; set; }
+    public GiniIndexCoefficient2015? GiniIndexCoefficient2015 { get; set; }
     [BsonElement("Gini index coefficient - distribution of family income 2016")]
-    public GiniIndexCoefficient2016 GiniIndexCoefficient2016 { get; set; }
+    public GiniIndexCoefficient2016? GiniIndexCoefficient2016 { get; set; }
     [BsonElement("Gini index coefficient - distribution of family income 2017")]
-    public GiniIndexCoefficient2017 GiniIndexCoefficient2017 { get; set; }
+    public GiniIndexCoefficient2017? GiniIndexCoefficient2017 { get; set; }
     [BsonElement("Gini index coefficient - distribution of family income 2018")]
-    public GiniIndexCoefficient2018 GiniIndexCoefficient2018 { get; set; }
+    public GiniIndexCoefficient2018? GiniIndexCoefficient2018 { get; set; }
 }
 
 /// <summary>

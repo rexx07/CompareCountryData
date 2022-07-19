@@ -10,11 +10,11 @@ namespace CompareCountries.Core.Domain.WorldFactbook.Economy;
 public class RealGdpGR
 {
     [BsonElement("Real GDP growth rate 2015")]
-    public RealGdpGR2015 RealGdpGr2015 { get; set; }
+    public RealGdpGR2015? RealGdpGr2015 { get; set; }
     [BsonElement("Real GDP growth rate 2016")]
-    public RealGdpGR2016 RealGdpGr2016 { get; set; }
+    public RealGdpGR2016? RealGdpGr2016 { get; set; }
     [BsonElement("Real GDP growth rate 2017")]
-    public RealGdpGR2017 RealGdpGr2017 { get; set; }
+    public RealGdpGR2017? RealGdpGr2017 { get; set; }
 }
 
 /// <summary>

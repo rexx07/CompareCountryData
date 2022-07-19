@@ -8,9 +8,9 @@ namespace CompareCountries.Core.Domain.WorldFactbook.Economy;
 public class PublicDebt: MetaData
 {
     [BsonElement("Public Debt for 2016")]
-    public PublicDebt2016 PublicDebt2016 { get; set; }
+    public PublicDebt2016? PublicDebt2016 { get; set; }
     [BsonElement("Public Debt for 2017")]
-    public PublicDebt2017 PublicDebt2017 { get; set; }
+    public PublicDebt2017? PublicDebt2017 { get; set; }
 }
 
 /// <summary>

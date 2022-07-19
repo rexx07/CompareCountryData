@@ -1,6 +1,9 @@
-﻿namespace CompareCountries.Core.Domain.WorldFactbook.Economy;
+﻿using System.ComponentModel;
+
+namespace CompareCountries.Core.Domain.WorldFactbook.Economy;
 
 /// <summary>
 /// Budget surplus is a submodel under Economy model.
 /// </summary>
-public class BudgetSurplusT: TextEntity { }
+[DisplayName("Budget surplus (+) or deficit (-)")]
+public class BudgetSurplus: TextEntity { }

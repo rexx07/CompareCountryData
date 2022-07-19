@@ -10,11 +10,11 @@ namespace CompareCountries.Core.Domain.WorldFactbook.Economy;
 public class UnemployedYouth
 {
     [BsonElement("Unemployed female of ages 15-24")]
-    public UnemployedFemale UnemployedFemale { get; set; }
+    public UnemployedFemale? UnemployedFemale { get; set; }
     [BsonElement("Unemployed male of ages 15-24")]
-    public UnemployedMale UnemployedMale { get; set; }
+    public UnemployedMale? UnemployedMale { get; set; }
     [BsonElement("Unemployed youth total of ages 15-24")]
-    public UnemployedYouthTotal UnemployedYouthTotal { get; set; }
+    public UnemployedYouthTotal? UnemployedYouthTotal { get; set; }
 }
 
 /// <summary>

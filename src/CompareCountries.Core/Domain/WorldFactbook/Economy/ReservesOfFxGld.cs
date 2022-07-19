@@ -10,9 +10,9 @@ namespace CompareCountries.Core.Domain.WorldFactbook.Economy;
 public class ReservesOfFxGld
 {
     [BsonElement("Reserves of foreign exchange and gold 2016")]
-    public ReserveOfFxGld2016 ReserveOfFxGld2016 { get; set; }
+    public ReserveOfFxGld2016? ReserveOfFxGld2016 { get; set; }
     [BsonElement("Reserves of foreign exchange and gold 2017")]
-    public ReserveOfFxGld2017 ReserveOfFxGld2017 { get; set; }
+    public ReserveOfFxGld2017? ReserveOfFxGld2017 { get; set; }
 }
 
 /// <summary>

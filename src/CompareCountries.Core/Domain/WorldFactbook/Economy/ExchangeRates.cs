@@ -5,24 +5,24 @@ namespace CompareCountries.Core.Domain.WorldFactbook.Economy;
 /// <summary>
 /// ExchangeRate is a submodel of Economy model.
 /// </summary>
-public class ExchangeRate
+public class ExchangeRates
 {
     [BsonElement("Exchange Rate for 2013")]
-    public ExchangeRates2013 ExchangeRates2013 { get; set; }
+    public ExchangeRates2013? ExchangeRates2013 { get; set; }
     [BsonElement("Exchange Rate for 2014")]
-    public ExchangeRates2014 ExchangeRates2014 { get; set; }
+    public ExchangeRates2014? ExchangeRates2014 { get; set; }
     [BsonElement("Exchange Rate for 2015")]
-    public ExchangeRates2015 ExchangeRates2015 { get; set; }
+    public ExchangeRates2015? ExchangeRates2015 { get; set; }
     [BsonElement("Exchange Rate for 2016")]
-    public ExchangeRates2016 ExchangeRates2016 { get; set; }
+    public ExchangeRates2016? ExchangeRates2016 { get; set; }
     [BsonElement("Exchange Rate for 2017")]
-    public ExchangeRates2017 ExchangeRates2017 { get; set; }
+    public ExchangeRates2017? ExchangeRates2017 { get; set; }
     [BsonElement("Exchange Rate for 2018")]
-    public ExchangeRates2018 ExchangeRates2018 { get; set; }
+    public ExchangeRates2018? ExchangeRates2018 { get; set; }
     [BsonElement("Exchange Rate for 2019")]
-    public ExchangeRates2019 ExchangeRates2019 { get; set; }
+    public ExchangeRates2019? ExchangeRates2019 { get; set; }
     [BsonElement("Exchange Rate for 2020")]
-    public ExchangeRates2020 ExchangeRates2020 { get; set; }
+    public ExchangeRates2020? ExchangeRates2020 { get; set; }
 }
 
 /// <summary>

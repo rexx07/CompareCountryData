@@ -8,13 +8,13 @@ namespace CompareCountries.Core.Domain.WorldFactbook.Economy;
 public class LaborForceByOccupation
 {
     [BsonElement("Agriculture Labor Force")]
-    public AgricultureLB AgricultureLb { get; set; }
+    public AgricultureLB? AgricultureLb { get; set; }
     [BsonElement("Industry Labor Force")]
-    public IndustryLB IndustryLb { get; set; }
+    public IndustryLB? IndustryLb { get; set; }
     [BsonElement("Industry and services Labor Force")]
-    public IndustryAndServicesLB IndustryAndServicesLB { get; set; }
+    public IndustryAndServicesLB? IndustryAndServicesLB { get; set; }
     [BsonElement("Services Labor Force")]
-    public ServicesLB ServicesLb { get; set; }
+    public ServicesLB? ServicesLb { get; set; }
     
 }
 

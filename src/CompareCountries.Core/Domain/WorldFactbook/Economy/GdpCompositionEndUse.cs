@@ -11,17 +11,17 @@ namespace CompareCountries.Core.Domain.WorldFactbook.Economy;
 public class GdpCompositionEndUse
 {
     [BsonElement("Export of goods and services")]
-    public ExportsGandS ExportsGandS { get; set; }
+    public ExportsGandS? ExportsGandS { get; set; }
     [BsonElement("Government consumption")]
-    public GovernmentConsumption GovernmentConsumption { get; set; }
+    public GovernmentConsumption? GovernmentConsumption { get; set; }
     [BsonElement("Household consumption")]
-    public HouseholdConsumption HouseholdConsumption { get; set; }
+    public HouseholdConsumption? HouseholdConsumption { get; set; }
     [BsonElement("Imports of goods and services")]
-    public ImportGandS ImportGandS { get; set; }
+    public ImportGandS? ImportGandS { get; set; }
     [BsonElement("Investment in fixed capital")]
-    public InvestmentInFxdCap InvestmentInFxdCap { get; set; }
+    public InvestmentInFxdCap? InvestmentInFxdCap { get; set; }
     [BsonElement("Investment in inventories")]
-    public InvestmentInventories InvestmentInventories { get; set; }
+    public InvestmentInventories? InvestmentInventories { get; set; }
 }
 
 /// <summary>

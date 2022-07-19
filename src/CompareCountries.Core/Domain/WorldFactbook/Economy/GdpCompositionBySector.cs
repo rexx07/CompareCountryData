@@ -10,11 +10,11 @@ namespace CompareCountries.Core.Domain.WorldFactbook.Economy;
 public class GdpCompositionBySector
 {
     [BsonElement("Agriculture")]
-    public Agriculture Agriculture { get; set; }
+    public Agriculture? Agriculture { get; set; }
     [BsonElement("Industry")]
-    public Agriculture Industry { get; set; }
+    public Industry? Industry { get; set; }
     [BsonElement("Services")]
-    public Agriculture Services { get; set; }
+    public Services? Services { get; set; }
 }
 
 /// <summary>

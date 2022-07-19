@@ -8,15 +8,15 @@ namespace CompareCountries.Core.Domain.WorldFactbook.Economy;
 public class Exports
 {
     [BsonElement("Export for 2016")]
-    public Export2016 Export2016 { get; set; }
+    public Export2016? Export2016 { get; set; }
     [BsonElement("Export for 2017")]
-    public Export2017 Export2017 { get; set; }
+    public Export2017? Export2017 { get; set; }
     [BsonElement("Export for 2018")]
-    public Export2018 Export2018 { get; set; }
+    public Export2018? Export2018 { get; set; }
     [BsonElement("Export for 2019")]
-    public Export2019 Export2019 { get; set; }
+    public Export2019? Export2019 { get; set; }
     [BsonElement("Export for 2020")]
-    public Export2020 Export2020 { get; set; }
+    public Export2020? Export2020 { get; set; }
 }
 
 /// <summary>

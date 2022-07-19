@@ -8,17 +8,17 @@ namespace CompareCountries.Core.Domain.WorldFactbook.Economy;
 public class UnemploymentRate: TextEntity
 {
     [BsonElement("Unemployment rate 2001")]
-    public UnemploymentRate2001 UnemploymentRate2001 { get; set; }
+    public UnemploymentRate2001? UnemploymentRate2001 { get; set; }
     [BsonElement("Unemployment rate 2009")]
-    public UnemploymentRate2009 UnemploymentRate2009 { get; set; }
+    public UnemploymentRate2009? UnemploymentRate2009 { get; set; }
     [BsonElement("Unemployment rate 2013")]
-    public UnemploymentRate2013 UnemploymentRate2013 { get; set; }
+    public UnemploymentRate2013? UnemploymentRate2013 { get; set; }
     [BsonElement("Unemployment rate 2014")]
-    public UnemploymentRate2014 UnemploymentRate2014 { get; set; }
+    public UnemploymentRate2014? UnemploymentRate2014 { get; set; }
     [BsonElement("Unemployment rate 2016")]
-    public UnemploymentRate2016 UnemploymentRate2016 { get; set; }
+    public UnemploymentRate2016? UnemploymentRate2016 { get; set; }
     [BsonElement("Unemployment rate 2017")]
-    public UnemploymentRate2017 UnemploymentRate2017 { get; set; }
+    public UnemploymentRate2017? UnemploymentRate2017 { get; set; }
 }
 
 /// <summary>

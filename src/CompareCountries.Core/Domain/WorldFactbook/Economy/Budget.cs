@@ -8,9 +8,9 @@ namespace CompareCountries.Core.Domain.WorldFactbook.Economy;
 public class Budget
 {
     [BsonElement("Expenditures")]
-    public Expenditures Expenditures { get; set; }
+    public Expenditures? Expenditures { get; set; }
     [BsonElement("Revenues")]
-    public Revenues Revenues { get; set; }
+    public Revenues? Revenues { get; set; }
 }
 
 /// <summary>

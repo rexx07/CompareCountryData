@@ -10,13 +10,13 @@ namespace CompareCountries.Core.Domain.WorldFactbook.Economy;
 public class InflationRate
 {
     [BsonElement("Inflation rate (consumer prices) 2016")]
-    public InflationRate2016 InflationRate2016 { get; set; }
+    public InflationRate2016? InflationRate2016 { get; set; }
     [BsonElement("Inflation rate (consumer prices) 2017")]
-    public InflationRate2017 InflationRate2017 { get; set; }
+    public InflationRate2017? InflationRate2017 { get; set; }
     [BsonElement("Inflation rate (consumer prices) 2018")]
-    public InflationRate2018 InflationRate2018 { get; set; }
+    public InflationRate2018? InflationRate2018 { get; set; }
     [BsonElement("Inflation rate (consumer prices) 2019")]
-    public InflationRate2019 InflationRate2019 { get; set; }
+    public InflationRate2019? InflationRate2019 { get; set; }
 }
 
 /// <summary>

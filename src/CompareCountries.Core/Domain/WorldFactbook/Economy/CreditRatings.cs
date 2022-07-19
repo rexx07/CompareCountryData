@@ -8,11 +8,11 @@ namespace CompareCountries.Core.Domain.WorldFactbook.Economy;
 public class CreditRatings
 {
     [BsonElement("Fitch rating")]
-    public FitchRating FitchRating { get; set; }
+    public FitchRating? FitchRating { get; set; }
     [BsonElement("Moody's rating")]
-    public MoodysRating MoodysRating { get; set; }
+    public MoodysRating? MoodysRating { get; set; }
     [BsonElement("Standard & Poors Rating")]
-    public StandardAndPoorsRating StandardAndPoorsRating { get; set; }
+    public StandardAndPoorsRating? StandardAndPoorsRating { get; set; }
 }
 
 /// <summary>

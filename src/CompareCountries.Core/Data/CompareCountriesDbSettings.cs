@@ -1,6 +1,6 @@
 ﻿namespace CompareCountries.Core.Data;
 
-public class CompareCountriesDbSettings: ICompareCountriesDbSettings
+public class CompareCountriesDbSettings : ICompareCountriesDbSettings
 {
     public string ConnectionString { get; set; } = null!;
 

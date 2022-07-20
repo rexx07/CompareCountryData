@@ -1,12 +1,10 @@
 ﻿using System.Security;
-using System.Text.Json;
 using CompareCountries.Core.Data;
 using Microsoft.AspNetCore.Mvc;
 using MongoDB.Bson;
 using MongoDB.Bson.IO;
 using MongoDB.Bson.Serialization;
 using MongoDB.Driver;
-using JsonConvert = Newtonsoft.Json.JsonConvert;
 
 namespace CompareCountries.Controllers;
 
@@ -14,8 +12,8 @@ namespace CompareCountries.Controllers;
 [ApiController]
 public class SeedController : Controller
 {
-    private readonly IMongoCollection<BsonDocument[]> _worldFactbookCollection;
     private readonly IWebHostEnvironment _env;
+    private readonly IMongoCollection<BsonDocument[]> _worldFactbookCollection;
 
     public SeedController(ICompareCountriesDbSettings settings, IWebHostEnvironment env)
     {
@@ -24,16 +22,13 @@ public class SeedController : Controller
         var database = client.GetDatabase(settings.DatabaseName);
         _worldFactbookCollection = database.GetCollection<BsonDocument[]>(settings.WorldCollectionName);
     }
-    
+
 
     [HttpGet]
     public async Task<IActionResult> ImportData()
     {
-        if (!_env.IsDevelopment())
-        {
-            throw new SecurityException("Not Allowed");
-        }
-        
+        if (!_env.IsDevelopment()) throw new SecurityException("Not Allowed");
+
         /*var documentAdded = 0;
         var path2 = Path.Combine(_env.ContentRootPath, @"Source\worldfactbook.json");
         
@@ -55,7 +50,7 @@ public class SeedController : Controller
         }*/
         var path = Path.Combine(_env.ContentRootPath, "Source");
         var subdirectories = Directory.GetDirectories(path);
-        Dictionary<string, string[]> continentCountries = new Dictionary<string, string[]>();
+        var continentCountries = new Dictionary<string, string[]>();
         var documentAdded = 0;
 
         foreach (var dir in subdirectories)
@@ -67,27 +62,21 @@ public class SeedController : Controller
         var allValues = continentCountries.Values;
 
         foreach (var values in allValues)
-        {
-            foreach (var value in values)
+        foreach (var value in values)
+            using (var streamReader = new StreamReader(path))
             {
-                using (var streamReader = new StreamReader(path))
-                {
-                    string? line;
-                    while ((line = await streamReader.ReadLineAsync()) != null)
+                string? line;
+                while ((line = await streamReader.ReadLineAsync()) != null)
+                    using (var jsonReader = new JsonReader(line))
                     {
-                        using (var jsonReader = new JsonReader(line))
-                        {
-                            var context = BsonDeserializationContext.CreateRoot(jsonReader);
-                            
-                            var document = _worldFactbookCollection.DocumentSerializer
-                                .Deserialize(context);
-                            await _worldFactbookCollection.InsertOneAsync(document);
-                            documentAdded++;
-                        }
+                        var context = BsonDeserializationContext.CreateRoot(jsonReader);
+
+                        var document = _worldFactbookCollection.DocumentSerializer
+                            .Deserialize(context);
+                        await _worldFactbookCollection.InsertOneAsync(document);
+                        documentAdded++;
                     }
-                }
             }
-        }
 
         return new JsonResult(new
         {

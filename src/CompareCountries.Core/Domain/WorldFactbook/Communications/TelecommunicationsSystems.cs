@@ -1,9 +1,9 @@
 ﻿namespace CompareCountries.Core.Domain.WorldFactbook.Communications;
 
 /// <summary>
-/// a submodel under communications model
+///     a submodel under communications model
 /// </summary>
-public class TelecommunicationsSystems: MetaData
+public class TelecommunicationsSystems : ExtraNote
 {
     public Domestic Domestic { get; set; }
     public GeneralAssessment GeneralAssessment { get; set; }
@@ -11,16 +11,22 @@ public class TelecommunicationsSystems: MetaData
 }
 
 /// <summary>
-/// Domestic is a submodel under Telecoommunications model
+///     Domestic is a submodel under Telecoommunications model
 /// </summary>
-public class Domestic: TextEntity{}
+public class Domestic : TextEntity
+{
+}
 
 /// <summary>
-/// GeneralAssessment is a submodel under Telecoommunications model
+///     GeneralAssessment is a submodel under Telecoommunications model
 /// </summary>
-public class GeneralAssessment: TextEntity{}
+public class GeneralAssessment : TextEntity
+{
+}
 
 /// <summary>
-/// International is a submodel under Telecoommunications model
+///     International is a submodel under Telecoommunications model
 /// </summary>
-public class International: TextEntity{}
+public class International : TextEntity
+{
+}

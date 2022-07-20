@@ -3,22 +3,26 @@
 namespace CompareCountries.Core.Domain.WorldFactbook.Communications;
 
 /// <summary>
-/// Broadband is a submodel of communications model
+///     Broadband is a submodel of communications model
 /// </summary>
 public class Broadband
 {
     [BsonElement("Subscription per 100 inhabitants")]
     public SubscriptionPerIndividuals SubscriptionPerIndividuals { get; set; }
-    [BsonElement("Total Subscribers")]
-    public BroadbandTotal Total { get; set; }
+
+    [BsonElement("Total Subscribers")] public BroadbandTotal Total { get; set; }
 }
 
 /// <summary>
-/// SubscriptionPerIndividuals is a submodel of Broadband model
+///     SubscriptionPerIndividuals is a submodel of Broadband model
 /// </summary>
-public class SubscriptionPerIndividuals: TextEntity { }
+public class SubscriptionPerIndividuals : TextEntity
+{
+}
 
 /// <summary>
-/// BroadbandTotal is a submodel of Broadband model
+///     BroadbandTotal is a submodel of Broadband model
 /// </summary>
-public class BroadbandTotal: TextEntity { }
+public class BroadbandTotal : TextEntity
+{
+}

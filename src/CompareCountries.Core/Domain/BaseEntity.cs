@@ -8,7 +8,6 @@ namespace CompareCountries.Core.Domain;
 public class BaseEntity
 {
     [Required]
-    [BsonId(IdGenerator = typeof(StringObjectIdGenerator))]
     [BsonRepresentation(BsonType.ObjectId)]
-    public string Id { get; set; }
+    public ObjectId? Id { get; set; }
 }
